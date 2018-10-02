@@ -2,7 +2,7 @@
 Open Charge Point Protocol Implementation in JS
 
 ## Installation
-```
+```bash
 npm install --save ocpp-js
 ```
 
@@ -30,7 +30,7 @@ OCPP JS uses a MongoDB DB to store all the actions received from charge points e
 Currently, the project supports MongoDB, firebase and file storage.
 In order to specify which DB to use, create a folder config, and then create a file default.json and insert your preferred storage method:
 
-```
+```json
 {
     "defaultDB": "mongodb",
     "mongodb": {
@@ -49,7 +49,7 @@ You can use Firebase by setting defaultDB : firebase.
 
 To be able to create a Central System, some charging points and a charging point server, you can use this code snippet:
 
-```
+```js
 var OCPP =  require('ocpp-js');
 
 var options = {
